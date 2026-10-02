@@ -42,7 +42,7 @@
              	<p>$169.99</p>
             </div> 
               
-            <a class="button" href="#">
+            <a id="addtocart" class="button" href="#">
               <img src="assets/images/icon-cart.svg " alt="cart">
               Add to Cart
             </a>
@@ -58,4 +58,12 @@
     </footer>
 
   </body>
+
+  <script>
+  <!-- just for funzies-->
+    const addToCartButton = document.getElementById("addtocart");
+    addToCartButton.addEventListener("click", (e) => {
+      window.alert("add to cart clicked!");
+    });
+  </script>
 </html>
