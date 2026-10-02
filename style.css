@@ -41,7 +41,7 @@
 
 html {
   font-size: var(--fs-paragraph);
-  font-family: Montserrat;
+  font-family: Montserrat, Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -67,7 +67,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   color: var(--c-grey);
-  max-width: 632px;
+  max-width: calc(800 / 16 * 1em);
   
 }
 
