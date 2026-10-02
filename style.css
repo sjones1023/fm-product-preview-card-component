@@ -27,7 +27,7 @@
   }
 
   @font-face {
-  	font-family: Faunces;
+  	font-family: Faunces,'Times New Roman', Times, serif;
   	font-weight: 700;
   	src: url('assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
   }
