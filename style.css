@@ -103,8 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 2.5rem;
+  padding: 2.5em;
 }
 
 .wrapper {
