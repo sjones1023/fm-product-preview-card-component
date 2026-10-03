@@ -27,14 +27,16 @@
   }
 
   @font-face {
-  	font-family: Faunces,'Times New Roman', Times, serif;
+  	font-family: Fraunces;
   	font-weight: 700;
-  	src: url('assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+  	src: url('assets/fonts/Fraunces/Fraunces-VariableFont_SOFT_wght.ttf');
   }
 
   :root {
     --fs-paragraph: calc(14/16 * 1rem);
     --fs-title: calc(39 / 16 * 1rem);
+
+    --ff-fraunces: Fraunces, serif;
   }
 }
 
@@ -78,17 +80,13 @@ body {
 
 .card-grid {
   display: grid;
-  
-  @media (width >= 768px) {
-    grid-template-columns: 1fr 1fr;
-    /*grid-auto-rows: minmax(auto-fit, 1fr);*/
-  }
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
 .card-title {
   color: var(--c-black);
-  font-family: Faunces, serif;
+  font-family: var(--ff-fraunces);
   font-weight: 700;
   font-size: var(--fs-title);
   margin-block-end: 0;
@@ -98,7 +96,7 @@ body {
   color: var(--c-grey);
   text-transform: uppercase;
   letter-spacing: .5ch;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-body {
@@ -121,8 +119,8 @@ body {
 
 .price-info :first-child {
   color: var(--c-primary-1);
-  font-size: 3rem;
-  font-family: Faunces;
+  font-size: 2.2rem;
+  font-family: Fraunces;
   font-weight: 700;
   margin-block: .5ch;
 }
